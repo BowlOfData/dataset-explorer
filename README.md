@@ -1,2 +1,4 @@
 # dataset-explorer
-explore text dataset
+explore tabular dataset. 
+
+Provides CLI and WEB interface
