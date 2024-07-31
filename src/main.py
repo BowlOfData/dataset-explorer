@@ -1,4 +1,5 @@
 from pandasArrow import pandasArrow
+import numpy as np
 
 def main():
     """
@@ -10,10 +11,12 @@ def main():
     print(pa.dtype())
 
     print("Numeric DF")
-    print(pa.identify_numeric())
-    
+    print(pa.identify_numeric())    
+   
     print("DropNA")
     print(pa.dropna())    
+
+    print(pa.dtype())
   
     # Fill NaN values with the mean of each column
     print("Fill NaN values with the mean of each column")

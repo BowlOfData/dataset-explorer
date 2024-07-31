@@ -12,10 +12,11 @@ class pandasArrow():
     def dtype(self) -> object:
         return self.df.dtypes 
 
-
     def dropna(self) -> object:
-        self.df = self.df.dropna(axis=0, how='any')
-        self.df = self.df.dropna(axis=1, how='any')
+        self.df = self.df.convert_dtypes()
+        self.df = self.df.dropna(axis=0, how='all')
+        self.df = self.df.dropna(axis=1, how='all')
+        self.df = self.df.convert_dtypes(dtype_backend='pyarrow')
         return self.df
 
     def identify_numeric(self) -> object:
