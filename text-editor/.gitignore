@@ -1,0 +1,11 @@
+# Build output
+/build/
+
+# Go build/test artifacts
+*.exe
+*.test
+*.out
+text-editor
+text-editor-linux
+text-editor-windows.exe
+text-editor-macos
